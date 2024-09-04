@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/57991cf767.js" crossorigin="anonymous"></script>
+</head>
+    <title>Geometry Genius</title>
+</head>
+<body>
+    <!-- starting section  -->
+    <div class="blog d-flex justify-content-around align-items-center mx-auto">
+       <div class="">
+        <h1><b>Interactive</b></h1>
+        <h3>Geometry Genius</h3>
+       </div>
+       <a class="btn btn-primary" href="blog.html">Blog</a>
+
+    </div>
+
+    <!-- cards section  -->
+
+    <section class="mt-5">
+        <div class="main row">
+            <div class="cards-div col-md-9">
+      <div class="row row-cols-lg-3 row-cols-1 row-cols-md-2 g-2">
+                  <!-- triangle  -->
+                  <div class="col">
+                    <div class="card text-center " style="width: 18rem;">
+                        <img src="./images/triangle.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Triangle</b></h5>
+                          <p class="card-text">Area(A)=0.5 X b X h</p>
+                       <div class="mb-3">
+                        <input id="triangle_base" type="text" placeholder="b" class="w-25">cm
+                        <input id="triangle_height" type="text" placeholder="h" class="w-25">cm
+                       </div>
+                          <a id="triangle-calculate-button" href="#" class="btn btn-primary w-100">calculate</a>
+                        </div>
+                      </div>
+                </div>
+                  <!-- rectangle  -->
+                <div class="col">
+                    <div class="card text-center " style="width: 18rem;">
+                        <img src="./images/rectangle.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Rectangle</b></h5>
+                          <p class="card-text">Area(A)=w X l</p>
+                       <div class="mb-3">
+                        <input id="rectangle_width" type="text" placeholder="w" class="w-25">cm
+                        <input id="rectangle_length" type="text" placeholder="l" class="w-25">cm
+                       </div>
+                          <a id="rectangle_calculation_button" href="#" class="btn btn-primary w-100">calculate</a>
+                        </div>
+                      </div>
+                </div>
+                  <!-- parallelogram  -->
+                 <div class="col">
+                    <div class="card text-center " style="width: 18rem;">
+                        <img src="./images/parallelogram.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Parallelogram</b></h5>
+                          <p class="card-text">Area(A)=b X h</p>
+                       <div class="mb-3">
+                       <p>b=10cm,h=12cm</p>
+                       </div>
+                          <a id="parallelogram_calculation_button" href="#" class="btn btn-primary w-100">calculate</a>
+                        </div>
+                      </div>
+                 </div>
+                  <!-- rhombas section  -->
+                 <div class="col">
+                    <div class="card text-center " style="width: 18rem;">
+                        <img src="./images/rhombus.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Rhombus</b></h5>
+                          <p class="card-text">Area(A)=0.5 X d1 X d2</p>
+                       <div class="mb-3">
+                       <p>d1=16cm,d2=8cm</p>
+                       </div>
+                          <a id="rhombus_calculation_button" href="#" class="btn btn-primary w-100">calculate</a>
+                        </div>
+                      </div>
+                 </div>
+                  <!-- pentagon  -->
+               <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="./images/pentagon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Pentagon</b></h5>
+                      <p class="card-text">Area(A)=0.5 X p X b</p>
+                   <div class="mb-3">
+                   <p>p=6cm,b=10cm</p>
+                   </div>
+                      <a id="pentagon_calculation_button" href="#" class="btn btn-primary w-100">calculate</a>
+                    </div>
+                  </div>
+               </div>
+                  <!-- Ellipse -->
+                <div class="col">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./images/ellipse.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><b>Ellipse</b></h5>
+                          <p class="card-text">Area(A)=pi*ab</p>
+                       <div class="mb-3">
+                       <p>a=10cm,b=4cm</p>
+                       </div>
+                          <a id="ellipse_calculation_button" href="#" class="btn btn-primary w-100">calculate</a>
+                        </div>
+                      </div>
+                </div>
+      </div>
+            </div>
+            <!-- calculation area  -->
+            <div class="calculation-div col-md-3 text-center border">
+                <u><h1><b>Area Calculation</b></h1></u>
+
+                <table id="calculation-table" class="table">
+
+                </table>
+               
+            </div>
+        </div>
+
+    </section>
+
+
+<script src="js/calculation.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+</body>
+
+</html>

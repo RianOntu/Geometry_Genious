@@ -1,0 +1,16 @@
+/* blog section  */
+.blog{
+background-color: #E7F4FB;
+width:90%;
+border-radius: 5px;
+}
+/* cards section  */
+img.card-img-top {
+    width: 48%;
+    margin: auto;
+    padding-top: 14px;
+    height:48%
+}
+.card{
+    height: 21rem !important;;
+}
